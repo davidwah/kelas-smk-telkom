@@ -1,1 +1,1 @@
-# kelas-smk-telkom
+# Kelas SMK Telkom Sidoarjo 
