@@ -1,1263 +1,1138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page - DWP</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
-      defer
-    ></script>
-  </head>
-  <body>
-    <!-- START: HEADER -->
-    <section class="header-workly relative">
-      <style scoped>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-        body {
-          font-family: "Poppins", sans-serif;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page - DWP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+</head>
 
-        :root {
-          --white-1: #ffffff;
-          --white-2: #eeeeee;
-          --white-3: #ecf1f4;
-          --black: #000000;
-          --dark: #0a0f16;
-          --subtleGreen: #90bcb7;
-          --darkGreen: #082d28;
-          --darkTosca: #569b9b;
-          --tosca-1: #00ffd1;
-          --tosca-2: #27d7d7;
-          --tosca-3: #3fe8ff;
-          --deepTosca-1: #016a6a;
-          --deepTosca-2: #02a6a6;
-          --grey-1: #888888;
-          --grey-2: #666666;
-        }
+<body>
+  <!-- START: HEADER -->
+  <section class="header-workly relative">
+    <style scoped>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-        section.header-workly {
-          background: radial-gradient(
-            100% 100% at 0% 0%,
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --white-1: #ffffff;
+        --white-2: #eeeeee;
+        --white-3: #ecf1f4;
+        --black: #000000;
+        --dark: #0a0f16;
+        --subtleGreen: #90bcb7;
+        --darkGreen: #082d28;
+        --darkTosca: #569b9b;
+        --tosca-1: #00ffd1;
+        --tosca-2: #27d7d7;
+        --tosca-3: #3fe8ff;
+        --deepTosca-1: #016a6a;
+        --deepTosca-2: #02a6a6;
+        --grey-1: #888888;
+        --grey-2: #666666;
+      }
+
+      section.header-workly {
+        background: radial-gradient(100% 100% at 0% 0%,
             #114e4e 0%,
             #052d2d 59.9%,
             #041111 89.53%,
-            #000909 100%
-          );
-        }
+            #000909 100%);
+      }
 
-        .text-40 {
-          font-size: 40px;
-        }
+      .text-40 {
+        font-size: 40px;
+      }
 
-        .text-28 {
-          font-size: 28px;
-        }
+      .text-28 {
+        font-size: 28px;
+      }
 
-        .text-24 {
-          font-size: 24px;
-        }
+      .text-24 {
+        font-size: 24px;
+      }
 
-        .text-20 {
-          font-size: 20px;
-        }
+      .text-20 {
+        font-size: 20px;
+      }
 
-        .text-white-1 {
-          color: var(--white-1);
-        }
+      .text-white-1 {
+        color: var(--white-1);
+      }
 
-        .text-white-2 {
-          color: var(--white-2);
-        }
+      .text-white-2 {
+        color: var(--white-2);
+      }
 
-        .text-darkGreen {
-          color: var(--darkGreen);
-        }
+      .text-darkGreen {
+        color: var(--darkGreen);
+      }
 
-        .text-subtleGreen {
-          color: var(--subtleGreen);
-        }
+      .text-subtleGreen {
+        color: var(--subtleGreen);
+      }
 
-        .bg-white-2 {
-          background-color: var(--white-2);
-        }
+      .bg-white-2 {
+        background-color: var(--white-2);
+      }
 
-        @media (min-width: 768px) {
-          .leading-px85 {
-            line-height: 85px;
-          }
+      @media (min-width: 768px) {
+        .leading-px85 {
+          line-height: 85px;
         }
+      }
 
-        .leading-px40 {
-          line-height: 40px;
-        }
+      .leading-px40 {
+        line-height: 40px;
+      }
 
-        .leading-px36 {
-          line-height: 36px;
-        }
+      .leading-px36 {
+        line-height: 36px;
+      }
 
-        .z-min100 {
-          z-index: -100;
-        }
+      .z-min100 {
+        z-index: -100;
+      }
 
-        .z-min10 {
-          z-index: -10;
-        }
+      .z-min10 {
+        z-index: -10;
+      }
 
-        .max-w-screen {
-          max-width: 1440px;
-        }
+      .max-w-screen {
+        max-width: 1440px;
+      }
 
-        .max-w-px400 {
-          max-width: 400px;
-        }
+      .max-w-px400 {
+        max-width: 400px;
+      }
 
-        .w-px580 {
-          width: 580px;
-        }
+      .w-px580 {
+        width: 580px;
+      }
 
-        .h-780 {
-          height: 780px;
-        }
-      </style>
-      <header class="pt-7 lg:pb-28">
-        <nav class="relative z-10 px-4 mx-auto max-w-screen-2xl lg:px-24">
-          <div class="flex flex-col items-stretch lg:flex-row lg:items-center">
-            <div class="flex items-center justify-between">
-              <!-- LOGO -->
-              <div>
-                <img
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/Logo.svg"
-                  alt="workly"
-                />
-              </div>
-              <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
-              <div>
-                <button
-                  class="block p-1 outline-none lg:hidden mobile-menu-button"
-                  data-target="#navigation"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 h-7 text-white-1"
-                    x-show="!showMenu"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 8h16M4 16h16"
-                    ></path>
-                    <path
-                      stroke-linecap="round"
-                      class="hidden w-7 h-7"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6
-                                            6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
+      .h-780 {
+        height: 780px;
+      }
+    </style>
+    <header class="pt-7 lg:pb-28">
+      <nav class="relative z-10 px-4 mx-auto max-w-screen-2xl lg:px-24">
+        <div class="flex flex-col items-stretch lg:flex-row lg:items-center">
+          <div class="flex items-center justify-between">
+            <!-- LOGO -->
+            <div>
+              <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/Logo.svg"
+                alt="workly" />
             </div>
-            <div class="hidden w-full mobile-menu lg:block" id="navigation">
-              <div
-                class="flex flex-col items-baseline justify-between mt-6 lg:flex-row lg:items-center lg:mt-0"
-              >
-                <div
-                  class="flex flex-col w-full ml-0 font-normal lg:flex-row text-white-1 lg:ml-44 lg:w-max"
-                >
-                  <a
-                    href="#"
-                    class="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0"
-                    >SERVICE</a
-                  >
-                  <a
-                    href="#"
-                    class="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0"
-                    >PORTFOLIO</a
-                  >
-                  <a
-                    href="#"
-                    class="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0"
-                    >ABOUT US</a
-                  >
-                </div>
-              </div>
+            <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
+            <div>
+              <button class="block p-1 outline-none lg:hidden mobile-menu-button" data-target="#navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white-1" x-show="!showMenu" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+                  <path stroke-linecap="round" class="hidden w-7 h-7" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6
+                                            6l12 12" />
+                </svg>
+              </button>
             </div>
           </div>
-        </nav>
-        <!-- START: HERO BACKGROUND -->
-        <div class="mx-auto hero-bg max-w-screen-2xl">
-          <div class="flex justify-end invisible lg:visible">
-            <img
-              src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/img-header.png"
-              alt="background"
-              class="absolute top-0 z-0 object-cover h-full"
-            />
-          </div>
-        </div>
-        <!-- END: HERO BACKGROUND -->
-        <div
-          class="relative z-10 px-4 mx-auto mt-20 hero md:mt-44 max-w-screen-2xl lg:px-24"
-        >
-          <div class="grid grid-cols-1 gap-12 md:grid-cols-12">
-            <div class="md:col-span-11 lg:col-span-7">
-              <div
-                class="text-5xl font-semibold leading-normal hero-title text-white-2 md:text-6xl leading-px85"
-              >
-                One platform to boost your business
-              </div>
-              <div
-                class="mt-8 text-xl font-normal leading-8 hero-description text-subtleGreen lg:leading-9 md:text-2xl"
-              >
-                Learn how to manage your business efficiently with a platform
-                trusted by global leaders.
-              </div>
-              <div class="mt-32">
-                <a
-                  href=""
-                  class="px-10 py-4 text-2xl font-semibold rounded-lg bg-white-2 text-darkGreen"
-                  >Get Started</a
-                >
+          <div class="hidden w-full mobile-menu lg:block" id="navigation">
+            <div class="flex flex-col items-baseline justify-between mt-6 lg:flex-row lg:items-center lg:mt-0">
+              <div class="flex flex-col w-full ml-0 font-normal lg:flex-row text-white-1 lg:ml-44 lg:w-max">
+                <a href="#" class="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0">SERVICE</a>
+                <a href="#" class="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0">PORTFOLIO</a>
+                <a href="#" class="py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0">ABOUT US</a>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-      ></script>
-      <script>
-        $(document).ready(function () {
-          $(".mobile-menu-button").each(function (_, navToggler) {
-            var target = $(navToggler).data("target");
-            $(navToggler).on("click", function () {
-              $(target).animate({
-                height: "toggle",
-              });
+      </nav>
+      <!-- START: HERO BACKGROUND -->
+      <div class="mx-auto hero-bg max-w-screen-2xl">
+        <div class="flex justify-end invisible lg:visible">
+          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/img-header.png"
+            alt="background" class="absolute top-0 z-0 object-cover h-full" />
+        </div>
+      </div>
+      <!-- END: HERO BACKGROUND -->
+      <div class="relative z-10 px-4 mx-auto mt-20 hero md:mt-44 max-w-screen-2xl lg:px-24">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-12">
+          <div class="md:col-span-11 lg:col-span-7">
+            <div class="text-5xl font-semibold leading-normal hero-title text-white-2 md:text-6xl leading-px85">
+              One platform to boost your business
+            </div>
+            <div class="mt-8 text-xl font-normal leading-8 hero-description text-subtleGreen lg:leading-9 md:text-2xl">
+              Learn how to manage your business efficiently with a platform
+              trusted by global leaders.
+            </div>
+            <div class="mt-32">
+              <a href="" class="px-10 py-4 text-2xl font-semibold rounded-lg bg-white-2 text-darkGreen">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $(".mobile-menu-button").each(function (_, navToggler) {
+          var target = $(navToggler).data("target");
+          $(navToggler).on("click", function () {
+            $(target).animate({
+              height: "toggle",
             });
           });
         });
-      </script>
-    </section>
-    <!-- END: HEADER -->
-    <section class="contact-us relative overflow-hidden mx-auto bg-dark-5">
-      <style scoped>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+      });
+    </script>
+  </section>
+  <!-- END: HEADER -->
+  <section class="contact-us relative overflow-hidden mx-auto bg-dark-5">
+    <style scoped>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700&display=swap");
 
-        .font-body {
-          font-family: "Inter", sans-serif;
-        }
+      .font-body {
+        font-family: "Inter", sans-serif;
+      }
 
-        :root {
-          --light-1: #ffffff;
-          --light-2: #f9fafe;
-          --light-3: #fafafd;
+      :root {
+        --light-1: #ffffff;
+        --light-2: #f9fafe;
+        --light-3: #fafafd;
 
-          --dark-1: #16171c;
-          --dark-2: #494c57;
-          --dark-3: #171717;
-          --dark-4: #202020;
-          --dark-5: #151515;
-          --dark-6: #0f0f0f;
+        --dark-1: #16171c;
+        --dark-2: #494c57;
+        --dark-3: #171717;
+        --dark-4: #202020;
+        --dark-5: #151515;
+        --dark-6: #0f0f0f;
 
-          --subtleGrey-1: #f8f8fc;
-          --subtleGrey-2: #989db1;
-          --subtleGrey-3: #8d8f98;
-          --subtleGrey-4: #9a9a9a;
-          --subtleGrey-5: #ced2de;
+        --subtleGrey-1: #f8f8fc;
+        --subtleGrey-2: #989db1;
+        --subtleGrey-3: #8d8f98;
+        --subtleGrey-4: #9a9a9a;
+        --subtleGrey-5: #ced2de;
 
-          --subtleBlue-1: #34b3ff;
-          --subtleBlue-2: #518cff;
-          --subtleBlue-3: #4376db;
-          --subtleBlue-4: #cce3ff;
+        --subtleBlue-1: #34b3ff;
+        --subtleBlue-2: #518cff;
+        --subtleBlue-3: #4376db;
+        --subtleBlue-4: #cce3ff;
 
-          --subtleGreen-1: #00b67a;
+        --subtleGreen-1: #00b67a;
 
-          --lemonYellow: #f2ff57;
-          --deepGrey: #2e2e2e;
-          --navy-1: #313e60;
-          --navy-2: #1c3055;
-        }
+        --lemonYellow: #f2ff57;
+        --deepGrey: #2e2e2e;
+        --navy-1: #313e60;
+        --navy-2: #1c3055;
+      }
 
-        .text-light-1 {
-          color: var(--light-1);
-        }
+      .text-light-1 {
+        color: var(--light-1);
+      }
 
-        .text-light-2 {
-          color: var(--light-2);
-        }
+      .text-light-2 {
+        color: var(--light-2);
+      }
 
-        .text-light-3 {
-          color: var(--light-3);
-        }
+      .text-light-3 {
+        color: var(--light-3);
+      }
 
-        .text-dark-1 {
-          color: var(--dark-1);
-        }
+      .text-dark-1 {
+        color: var(--dark-1);
+      }
 
-        .text-dark-2 {
-          color: var(--dark-2);
-        }
+      .text-dark-2 {
+        color: var(--dark-2);
+      }
 
-        .text-dark-3 {
-          color: var(--dark-3);
-        }
+      .text-dark-3 {
+        color: var(--dark-3);
+      }
 
-        .text-dark-4 {
-          color: var(--dark-4);
-        }
+      .text-dark-4 {
+        color: var(--dark-4);
+      }
 
-        .text-dark-5 {
-          color: var(--dark-5);
-        }
+      .text-dark-5 {
+        color: var(--dark-5);
+      }
 
-        .text-subtleBlue-1 {
-          color: var(--subtleBlue-1);
-        }
+      .text-subtleBlue-1 {
+        color: var(--subtleBlue-1);
+      }
 
-        .text-subtleBlue-4 {
-          color: var(--subtleBlue-4);
-        }
+      .text-subtleBlue-4 {
+        color: var(--subtleBlue-4);
+      }
 
-        .text-subtleGrey-1 {
-          color: var(--ssubtleGrey-1);
-        }
+      .text-subtleGrey-1 {
+        color: var(--ssubtleGrey-1);
+      }
 
-        .text-subtleGrey-2 {
-          color: var(--subtleGrey-2);
-        }
+      .text-subtleGrey-2 {
+        color: var(--subtleGrey-2);
+      }
 
-        .text-subtleGrey-3 {
-          color: var(--subtleGrey-3);
-        }
+      .text-subtleGrey-3 {
+        color: var(--subtleGrey-3);
+      }
 
-        .text-subtleGrey-4 {
-          color: var(--subtleGrey-4);
-        }
+      .text-subtleGrey-4 {
+        color: var(--subtleGrey-4);
+      }
 
-        .text-subtleGrey-5 {
-          color: var(--subtleGrey-5);
-        }
+      .text-subtleGrey-5 {
+        color: var(--subtleGrey-5);
+      }
 
-        .bg-light-1 {
-          background-color: var(--light-1);
-        }
+      .bg-light-1 {
+        background-color: var(--light-1);
+      }
 
-        .bg-light-2 {
-          background-color: var(--light-2);
-        }
+      .bg-light-2 {
+        background-color: var(--light-2);
+      }
 
-        .bg-light-3 {
-          background-color: var(--light-3);
-        }
+      .bg-light-3 {
+        background-color: var(--light-3);
+      }
 
-        .bg-dark-5 {
-          background-color: var(--dark-5);
-        }
+      .bg-dark-5 {
+        background-color: var(--dark-5);
+      }
 
-        .bg-dark-6 {
-          background-color: var(--dark-6);
-        }
+      .bg-dark-6 {
+        background-color: var(--dark-6);
+      }
 
-        .bg-subtleGreen {
-          background-color: var(--subtleGreen-1);
-        }
+      .bg-subtleGreen {
+        background-color: var(--subtleGreen-1);
+      }
 
-        .bg-subtleGrey-1 {
-          background-color: var(--subtleGrey-1);
-        }
+      .bg-subtleGrey-1 {
+        background-color: var(--subtleGrey-1);
+      }
 
-        .bg-deepGrey {
-          background-color: var(--deepGrey);
-        }
+      .bg-deepGrey {
+        background-color: var(--deepGrey);
+      }
 
-        .bg-lemonYellow {
-          background-color: var(--lemonYellow);
-        }
+      .bg-lemonYellow {
+        background-color: var(--lemonYellow);
+      }
 
-        .w-screen-custom {
-          width: 1560px;
-        }
+      .w-screen-custom {
+        width: 1560px;
+      }
 
-        .ring-subtleGrey-3 {
-          --tw-ring-opacity: 1;
-          --tw-ring-color: rgba(141, 143, 152, var(--tw-ring-opacity));
-        }
+      .ring-subtleGrey-3 {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgba(141, 143, 152, var(--tw-ring-opacity));
+      }
 
-        .text-px20 {
-          font-size: 20px;
-        }
+      .text-px20 {
+        font-size: 20px;
+      }
 
-        .text-px32 {
-          font-size: 32px;
-        }
+      .text-px32 {
+        font-size: 32px;
+      }
 
-        .mb-18 {
-          margin-bottom: 72px;
-        }
+      .mb-18 {
+        margin-bottom: 72px;
+      }
 
-        .ml-18 {
-          margin-left: 72px;
-        }
+      .ml-18 {
+        margin-left: 72px;
+      }
 
-        .mt-18 {
-          margin-top: 72px;
-        }
+      .mt-18 {
+        margin-top: 72px;
+      }
 
-        .-mt-13 {
-          margin-top: -52px;
-        }
+      .-mt-13 {
+        margin-top: -52px;
+      }
 
-        .bg-card-professional {
-          background: linear-gradient(180deg, #518cff 0%, #4376db 100%);
-        }
-      </style>
-      <!-- background ornament -->
-      <div
-        class="relative z-10 hidden mx-auto max-w-screen-2xl lg:block -ml-20"
-      >
-        <div class="flex justify-start">
-          <svg
-            width="269"
-            height="359"
-            viewBox="0 0 269 359"
-            fill="none"
-            class="absolute z-0 -mt-16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              r="115.055"
-              transform="matrix(-1 0 0 1
-                                115.945 115.055)"
-              fill="#1C3970"
-            />
-            <circle
-              r="95.1417"
-              transform="matrix(-1 0 0 1
-                                    173.858 199.142)"
-              fill="#34B3FF"
-            />
-            <circle
-              r="79.6535"
-              transform="matrix(-1 0 0
-                                        1 94.055 278.937)"
-              fill="#96F2FF"
-            />
-          </svg>
+      .bg-card-professional {
+        background: linear-gradient(180deg, #518cff 0%, #4376db 100%);
+      }
+    </style>
+    <!-- background ornament -->
+    <div class="relative z-10 hidden mx-auto max-w-screen-2xl lg:block -ml-20">
+      <div class="flex justify-start">
+        <svg width="269" height="359" viewBox="0 0 269 359" fill="none" class="absolute z-0 -mt-16"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle r="115.055" transform="matrix(-1 0 0 1
+                                115.945 115.055)" fill="#1C3970" />
+          <circle r="95.1417" transform="matrix(-1 0 0 1
+                                    173.858 199.142)" fill="#34B3FF" />
+          <circle r="79.6535" transform="matrix(-1 0 0
+                                        1 94.055 278.937)" fill="#96F2FF" />
+        </svg>
+      </div>
+    </div>
+    <main class="py-28 relative z-0 max-w-screen-2xl mx-auto bg-dark-5 font-body">
+      <div class="max-w-screen-xl px-4 mx-auto">
+        <div
+          class="text-5xl font-bold leading-tight text-left heading text-white md:text-center md:text-6xl lg:leading-snug font-display">
+          Faster and Easier Financial <br class="md:hidden lg:block" />
+          Management Starts Here
+        </div>
+        <div class="flex flex-col items-center justify-center mt-18 md:flex-row md:space-x-7 space-y-7 md:space-y-0">
+          <a href="#"
+            class="w-full px-8 py-4 text-xl font-bold text-center bg-subtleGreen rounded-xl text-light-1 md:w-auto">Contact
+            Us</a>
+          <a href="#"
+            class="w-full px-8 py-4 text-xl font-normal text-center ring-inset ring-subtleGrey-3 ring-2 rounded-xl text-white md:w-auto">View
+            Demo</a>
         </div>
       </div>
-      <main
-        class="py-28 relative z-0 max-w-screen-2xl mx-auto bg-dark-5 font-body"
-      >
-        <div class="max-w-screen-xl px-4 mx-auto">
-          <div
-            class="text-5xl font-bold leading-tight text-left heading text-white md:text-center md:text-6xl lg:leading-snug font-display"
-          >
-            Faster and Easier Financial <br class="md:hidden lg:block" />
-            Management Starts Here
-          </div>
-          <div
-            class="flex flex-col items-center justify-center mt-18 md:flex-row md:space-x-7 space-y-7 md:space-y-0"
-          >
-            <a
-              href="#"
-              class="w-full px-8 py-4 text-xl font-bold text-center bg-subtleGreen rounded-xl text-light-1 md:w-auto"
-              >Contact Us</a
-            >
-            <a
-              href="#"
-              class="w-full px-8 py-4 text-xl font-normal text-center ring-inset ring-subtleGrey-3 ring-2 rounded-xl text-white md:w-auto"
-              >View Demo</a
-            >
-          </div>
-        </div>
-      </main>
-    </section>
-    <section class="value bg-softBlue py-16">
-      <style scoped>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-        body {
-          font-family: "Inter", sans-serif;
-        }
-        :root {
-          --black-1: #080e09;
-          --black-2: #232323;
-          --black-3: #101419;
-          --gray-3: #e2e3e5;
-          --gray-4: #c9c9c9;
-          --gray-5: #adb2b8;
-          --gray-6: #9c9c9c;
-          --gray-7: #879fb0;
-          --blue-primary: #0f52ba;
-          --blue-secondary: #478fff;
-          --blue-tertiary: #739ad5;
-          --softBlue: #f9fcfc;
-          --yellow: #ff9900;
-        }
-        .border-blue-primary {
-          border-color: var(--blue-primary);
-        }
-        .text-blackText-2 {
-          color: var(--black-2);
-        }
-        .text-blue-primary {
-          color: var(--blue-primary);
-        }
-        .text-gray-6 {
-          color: var(--gray-6);
-        }
-        .text-gray-7 {
-          color: var(--gray-7);
-        }
-        .shadow-sblue {
-          box-shadow: 0px 24px 32px rgba(15, 82, 186, 0.4);
-        }
-        .shadow-cardShadow {
-          box-shadow: none;
-        }
-        .cardShadow:hover {
-          box-shadow: 12px 24px 80px rgba(15, 82, 186, 0.06);
-        }
-        .rounded-28 {
-          border-radius: 28px;
-        }
-        .z-forBackground {
-          z-index: -99;
-        }
-        .text-7 {
-          font-size: 28px;
-        }
-        .bg-softBlue {
-          background-color: var(--softBlue);
-        }
+    </main>
+  </section>
+  <section class="value bg-softBlue py-16">
+    <style scoped>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      :root {
+        --black-1: #080e09;
+        --black-2: #232323;
+        --black-3: #101419;
+        --gray-3: #e2e3e5;
+        --gray-4: #c9c9c9;
+        --gray-5: #adb2b8;
+        --gray-6: #9c9c9c;
+        --gray-7: #879fb0;
+        --blue-primary: #0f52ba;
+        --blue-secondary: #478fff;
+        --blue-tertiary: #739ad5;
+        --softBlue: #f9fcfc;
+        --yellow: #ff9900;
+      }
+
+      .border-blue-primary {
+        border-color: var(--blue-primary);
+      }
+
+      .text-blackText-2 {
+        color: var(--black-2);
+      }
+
+      .text-blue-primary {
+        color: var(--blue-primary);
+      }
+
+      .text-gray-6 {
+        color: var(--gray-6);
+      }
+
+      .text-gray-7 {
+        color: var(--gray-7);
+      }
+
+      .shadow-sblue {
+        box-shadow: 0px 24px 32px rgba(15, 82, 186, 0.4);
+      }
+
+      .shadow-cardShadow {
+        box-shadow: none;
+      }
+
+      .cardShadow:hover {
+        box-shadow: 12px 24px 80px rgba(15, 82, 186, 0.06);
+      }
+
+      .rounded-28 {
+        border-radius: 28px;
+      }
+
+      .z-forBackground {
+        z-index: -99;
+      }
+
+      .text-7 {
+        font-size: 28px;
+      }
+
+      .bg-softBlue {
+        background-color: var(--softBlue);
+      }
+
+      .icon-placeholder {
+        height: 200px;
+        width: 274px;
+      }
+
+      @media (min-width: 768px) {
         .icon-placeholder {
-          height: 200px;
-          width: 274px;
+          height: 274px;
+          width: 303px;
         }
-        @media (min-width: 768px) {
-          .icon-placeholder {
-            height: 274px;
-            width: 303px;
-          }
+      }
+
+      @media (min-width: 1024px) {
+        .icon-placeholder {
+          width: 250px;
         }
-        @media (min-width: 1024px) {
-          .icon-placeholder {
-            width: 250px;
-          }
-        }
-      </style>
-      <div class="max-w-screen-2xl px-4 lg:px-24 mx-auto content">
-        <div class="text-center section-heading mb-16">
-          <div
-            class="mb-3 text-4xl font-bold leading-relaxed text-blackText-2 lg:text-6xl"
-          >
-            Why choose us
-          </div>
-          <div class="text-lg font-medium text-gray-7">
-            House is comitted to helping its clients to reach their goals
+      }
+    </style>
+    <div class="max-w-screen-2xl px-4 lg:px-24 mx-auto content">
+      <div class="text-center section-heading mb-16">
+        <div class="mb-3 text-4xl font-bold leading-relaxed text-blackText-2 lg:text-6xl">
+          Why choose us
+        </div>
+        <div class="text-lg font-medium text-gray-7">
+          House is comitted to helping its clients to reach their goals
+        </div>
+      </div>
+      <div class="grid justify-center grid-cols-6 gap-10 text-left section-element lg:grid-cols-12 md:gap-2">
+        <!-- TAX ADVANTAGE -->
+        <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
+          <div class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow">
+            <div class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder">
+              <img
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes-color.svg"
+                alt="house" class="color" width="76" />
+            </div>
+            <div>
+              <img class="non-color" width="76"
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes.svg"
+                alt="house" />
+            </div>
+            <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
+              Tax Advantage
+            </div>
+            <div class="text-base font-normal leading-7 text-gray-7">
+              Tax advantage which applies to certain accounts or investments.
+            </div>
           </div>
         </div>
-        <div
-          class="grid justify-center grid-cols-6 gap-10 text-left section-element lg:grid-cols-12 md:gap-2"
-        >
-          <!-- TAX ADVANTAGE -->
-          <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
-            <div
-              class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow"
-            >
-              <div
-                class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder"
-              >
-                <img
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes-color.svg"
-                  alt="house"
-                  class="color"
-                  width="76"
-                />
-              </div>
-              <div>
-                <img
-                  class="non-color"
-                  width="76"
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes.svg"
-                  alt="house"
-                />
-              </div>
-              <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
-                Tax Advantage
-              </div>
-              <div class="text-base font-normal leading-7 text-gray-7">
-                Tax advantage which applies to certain accounts or investments.
-              </div>
+        <!-- PROPERTY INSURANCE -->
+        <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
+          <div class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow">
+            <div class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder">
+              <img
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user-color.svg"
+                alt="house" class="color" />
+            </div>
+            <div>
+              <img class="non-color"
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user.svg"
+                alt="house" />
+            </div>
+            <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
+              Property Insurance
+            </div>
+            <div class="text-base font-normal leading-7 text-gray-7">
+              A series of policies that offer either property protection of
+              liability coverage.
             </div>
           </div>
-          <!-- PROPERTY INSURANCE -->
-          <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
-            <div
-              class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow"
-            >
-              <div
-                class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder"
-              >
-                <img
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user-color.svg"
-                  alt="house"
-                  class="color"
-                />
-              </div>
-              <div>
-                <img
-                  class="non-color"
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user.svg"
-                  alt="house"
-                />
-              </div>
-              <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
-                Property Insurance
-              </div>
-              <div class="text-base font-normal leading-7 text-gray-7">
-                A series of policies that offer either property protection of
-                liability coverage.
-              </div>
+        </div>
+        <!-- LOWEST COMMISSION -->
+        <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
+          <div class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow">
+            <div class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder">
+              <img
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount-color.svg"
+                alt="house" class="color" />
+            </div>
+            <div>
+              <img class="non-color"
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount.svg"
+                alt="house" />
+            </div>
+            <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
+              Lowest Commission
+            </div>
+            <div class="text-base font-normal leading-7 text-gray-7">
+              No longer have to negotiate commissions and haggle with other
+              agents.
             </div>
           </div>
-          <!-- LOWEST COMMISSION -->
-          <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
-            <div
-              class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow"
-            >
-              <div
-                class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder"
-              >
-                <img
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount-color.svg"
-                  alt="house"
-                  class="color"
-                />
-              </div>
-              <div>
-                <img
-                  class="non-color"
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount.svg"
-                  alt="house"
-                />
-              </div>
-              <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
-                Lowest Commission
-              </div>
-              <div class="text-base font-normal leading-7 text-gray-7">
-                No longer have to negotiate commissions and haggle with other
-                agents.
-              </div>
+        </div>
+        <!-- HOUSE NOW-->
+        <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
+          <div class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow">
+            <div class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder">
+              <img
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar-color.svg"
+                alt="house" class="color" width="62" />
             </div>
-          </div>
-          <!-- HOUSE NOW-->
-          <div class="col-span-6 mr-0 md:col-span-3 md:mr-1">
-            <div
-              class="px-8 transition duration-700 ease-out py-7 rounded-3xl hover:bg-white cardShadow"
-            >
-              <div
-                class="absolute transition duration-700 ease-out opacity-0 hover:opacity-100 icon-placeholder"
-              >
-                <img
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar-color.svg"
-                  alt="house"
-                  class="color"
-                  width="62"
-                />
-              </div>
-              <div>
-                <img
-                  class="non-color"
-                  width="62"
-                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar.svg"
-                  alt="house"
-                />
-              </div>
-              <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
-                House Now
-              </div>
-              <div class="text-base font-normal leading-7 text-gray-7">
-                Easy booking system for a host. Try our innovative model.
-              </div>
+            <div>
+              <img class="non-color" width="62"
+                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar.svg"
+                alt="house" />
+            </div>
+            <div class="mt-6 mb-1 text-base font-bold text-blue-primary">
+              House Now
+            </div>
+            <div class="text-base font-normal leading-7 text-gray-7">
+              Easy booking system for a host. Try our innovative model.
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="h-screen feature-section bg-black-1">
-      <style scoped>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-        body {
-          font-family: "Poppins", sans-serif;
+    </div>
+  </section>
+  <section class="h-screen feature-section bg-black-1">
+    <style scoped>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --white-1: #ffffff;
+        --white-2: #eeeeee;
+        --white-3: #ecf1f4;
+        --black: #000909;
+        --dark: #0a0f16;
+        --subtleGreen: #90bcb7;
+        --darkGreen: #082d28;
+        --darkTosca: #569b9b;
+        --tosca-1: #00ffd1;
+        --tosca-2: #27d7d7;
+        --tosca-3: #3fe8ff;
+        --deepTosca-1: #016a6a;
+        --deepTosca-2: #02a6a6;
+        --grey-1: #888888;
+        --grey-2: #666666;
+      }
+
+      .bg-black-1 {
+        background-color: var(--black);
+      }
+
+      .bg-dark {
+        background-color: var(--dark);
+      }
+
+      .text-40 {
+        font-size: 40px;
+      }
+
+      .text-28 {
+        font-size: 28px;
+      }
+
+      .text-24 {
+        font-size: 24px;
+      }
+
+      .text-20 {
+        font-size: 20px;
+      }
+
+      .text-white-1 {
+        color: var(--white-1);
+      }
+
+      .text-white-2 {
+        color: var(--white-2);
+      }
+
+      .text-grey-1 {
+        color: var(--grey-1);
+      }
+
+      .text-grey-2 {
+        color: var(--grey-2);
+      }
+
+      .text-darkGreen {
+        color: var(--darkGreen);
+      }
+
+      .text-subtleGreen {
+        color: var(--subtleGreen);
+      }
+
+      .bg-white-2 {
+        background-color: var(--white-2);
+      }
+
+      @media (min-width: 768px) {
+        .mt-px442 {
+          margin-top: 442px;
         }
-        :root {
-          --white-1: #ffffff;
-          --white-2: #eeeeee;
-          --white-3: #ecf1f4;
-          --black: #000909;
-          --dark: #0a0f16;
-          --subtleGreen: #90bcb7;
-          --darkGreen: #082d28;
-          --darkTosca: #569b9b;
-          --tosca-1: #00ffd1;
-          --tosca-2: #27d7d7;
-          --tosca-3: #3fe8ff;
-          --deepTosca-1: #016a6a;
-          --deepTosca-2: #02a6a6;
-          --grey-1: #888888;
-          --grey-2: #666666;
-        }
-        .bg-black-1 {
-          background-color: var(--black);
-        }
-        .bg-dark {
-          background-color: var(--dark);
-        }
-        .text-40 {
-          font-size: 40px;
-        }
-        .text-28 {
-          font-size: 28px;
-        }
-        .text-24 {
-          font-size: 24px;
-        }
-        .text-20 {
-          font-size: 20px;
-        }
-        .text-white-1 {
-          color: var(--white-1);
-        }
-        .text-white-2 {
-          color: var(--white-2);
-        }
-        .text-grey-1 {
-          color: var(--grey-1);
-        }
-        .text-grey-2 {
-          color: var(--grey-2);
-        }
-        .text-darkGreen {
-          color: var(--darkGreen);
-        }
-        .text-subtleGreen {
-          color: var(--subtleGreen);
-        }
-        .bg-white-2 {
-          background-color: var(--white-2);
-        }
-        @media (min-width: 768px) {
-          .mt-px442 {
-            margin-top: 442px;
-          }
-        }
-        .leading-px40 {
-          line-height: 40px;
-        }
-        .leading-px36 {
-          line-height: 36px;
-        }
-        .z-min100 {
-          z-index: -100;
-        }
-        .z-min10 {
-          z-index: -10;
-        }
-        .max-w-screen {
-          max-width: 1440px;
-        }
-        .max-w-px400 {
-          max-width: 400px;
-        }
-        .w-px580 {
-          width: 580px;
-        }
-        .h-780 {
-          height: 780px;
-        }
-      </style>
-      <main
-        class="px-4 pt-32 pb-0 mx-auto max-w-screen-2xl lg:px-24 how-can md:pb-24"
-      >
-        <h1
-          class="font-semibold leading-snug text-center text-white-2 md:leading-9 text-40"
-        >
-          How can we help your business
-        </h1>
-        <div
-          class="relative z-10 grid grid-cols-1 card md:grid-cols-12 gap-11 mt-14"
-        >
-          <!-- CARD 1 -->
-          <div class="md:col-span-6 lg:col-span-4">
-            <div class="p-8 bg-dark rounded-3xl">
-              <svg
-                width="64"
-                height="64"
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="64" height="64" rx="32" fill="#1F1F33" />
-                <path
-                  d="M44.6787
-                                                        21.764C44.5022 21.1961
-                                                        44.1901 20.6796 43.7694
-                                                        20.2592C43.3487 19.8387
-                                                        42.8321 19.5269 42.2641
-                                                        19.3507L41.3801
-                                                        19.076C39.8143 18.5903
-                                                        38.1455 18.5414 36.554
-                                                        18.9348C34.9625 19.3281
-                                                        33.5086 20.1487 32.3494
-                                                        21.308L31.0214
-                                                        22.6347C30.1232 21.9622
-                                                        29.0126 21.6361 27.8934
-                                                        21.7162C26.7742 21.7963
-                                                        25.7214 22.2772 24.9281
-                                                        23.0707L23.2734
-                                                        24.728C23.0861 24.9155
-                                                        22.981 25.1697 22.981
-                                                        25.4347C22.981 25.6997
-                                                        23.0861 25.9538 23.2734
-                                                        26.1413L25.3947
-                                                        28.2627L25.1547
-                                                        28.5027C24.938 28.7193
-                                                        24.7662 28.9766 24.6489
-                                                        29.2597C24.5316 29.5428
-                                                        24.4712 29.8462 24.4712
-                                                        30.1527C24.4712 30.4591
-                                                        24.5316 30.7625 24.6489
-                                                        31.0456C24.7662 31.3288
-                                                        24.938 31.586 25.1547
-                                                        31.8027L25.8161
-                                                        32.4627L23.9547
-                                                        33.524C23.8211 33.6003
-                                                        23.707 33.7064 23.6211
-                                                        33.834C23.5352 33.9617
-                                                        23.4799 34.1074 23.4595
-                                                        34.2599C23.4391 34.4124
-                                                        23.4542 34.5675 23.5035
-                                                        34.7132C23.5529 34.8589
-                                                        23.6352 34.9913 23.7441
-                                                        35.1L28.9294
-                                                        40.2867C29.0382 40.3952
-                                                        29.1706 40.4772 29.3162
-                                                        40.5263C29.4618 40.5754
-                                                        29.6168 40.5903 29.7691
-                                                        40.5698C29.9214 40.5493
-                                                        30.067 40.494 30.1944
-                                                        40.4081C30.3219 40.3222
-                                                        30.4279 40.2081 30.5041
-                                                        40.0747L31.5681
-                                                        38.2147L32.2307
-                                                        38.8773C32.4474 39.094
-                                                        32.7047 39.2659 32.9878
-                                                        39.3832C33.2709 39.5005
-                                                        33.5743 39.5608 33.8807
-                                                        39.5608C34.1872 39.5608
-                                                        34.4906 39.5005 34.7737
-                                                        39.3832C35.0568 39.2659
-                                                        35.3141 39.094 35.5307
-                                                        38.8773L35.7667
-                                                        38.6427L37.8867
-                                                        40.7627C38.0742 40.9499
-                                                        38.3284 41.0551 38.5934
-                                                        41.0551C38.8584 41.0551
-                                                        39.1126 40.9499 39.3001
-                                                        40.7627L40.9561
-                                                        39.1053C41.7493 38.3125
-                                                        42.2302 37.2602 42.3105
-                                                        36.1416C42.3908 35.0229
-                                                        42.0652 33.9127 41.3934
-                                                        33.0147L42.7241
-                                                        31.684C43.8838 30.5243
-                                                        44.7046 29.0697 45.0977
-                                                        27.4773C45.4909 25.885
-                                                        45.4414 24.2156 44.9547
-                                                        22.6493L44.6787
-                                                        21.764ZM41.6707
-                                                        21.26C42.1947 21.4227
-                                                        42.6054 21.8333 42.7681
-                                                        22.3573L43.0441
-                                                        23.2427C43.4224 24.4609
-                                                        43.4607 25.7594 43.1547
-                                                        26.9978C42.8488 28.2362
-                                                        42.2102 29.3675 41.3081
-                                                        30.2693L34.1147
-                                                        37.464C34.0523 37.5263
-                                                        33.9676 37.5613 33.8794
-                                                        37.5613C33.7912 37.5613
-                                                        33.7066 37.5263 33.6441
-                                                        37.464L26.5681
-                                                        30.3867C26.5058 30.3242
-                                                        26.4708 30.2396 26.4708
-                                                        30.1513C26.4708 30.0631
-                                                        26.5058 29.9785 26.5681
-                                                        29.916L33.7627
-                                                        22.72C34.6646 21.8183
-                                                        35.7957 21.1802 37.0339
-                                                        20.8744C38.272 20.5687
-                                                        39.5701 20.6071 40.7881
-                                                        20.9853L41.6707
-                                                        21.26ZM39.9521
-                                                        34.4547C40.5561 35.476
-                                                        40.4187 36.8133 39.5414
-                                                        37.6907L38.5921
-                                                        38.64L37.1787
-                                                        37.228L39.9521
-                                                        34.4547ZM26.3441
-                                                        24.4853C26.7618 24.0676
-                                                        27.3065 23.8006 27.8925
-                                                        23.7263C28.4785 23.652
-                                                        29.0726 23.7745 29.5814
-                                                        24.0747L26.8081
-                                                        26.848L25.3947
-                                                        25.4347L26.3441
-                                                        24.4853ZM30.1014
-                                                        36.7493L29.4161
-                                                        37.9453L26.0827
-                                                        34.612L27.2801
-                                                        33.9293L30.1014
-                                                        36.7493Z"
-                  fill="#DB00FF"
-                />
-                <path
-                  d="M26.3441
-                                                            24.4853C26.7618
-                                                            24.0676 27.3065
-                                                            23.8006 27.8925
-                                                            23.7263C28.4785
-                                                            23.652 29.0726
-                                                            23.7745 29.5814
-                                                            24.0747L26.8081
-                                                            26.848L25.3947
-                                                            25.4347L26.3441
-                                                            24.4853Z"
-                  fill="#DB00FF"
-                />
-                <path
-                  d="M30.1014
-                                                                36.7493L29.4161
-                                                                37.9453L26.0827
-                                                                34.612L27.2801
-                                                                33.9293L30.1014
-                                                                36.7493Z"
-                  fill="#DB00FF"
-                />
-                <path
-                  d="M39.9521
-                                                                    34.4547C40.5561
-                                                                    35.476
-                                                                    40.4187
-                                                                    36.8133
-                                                                    39.5414
-                                                                    37.6907L38.5921
-                                                                    38.64L37.1787
-                                                                    37.228L39.9521
-                                                                    34.4547Z"
-                  fill="#DB00FF"
-                />
-                <path
-                  d="M41.6707
-                                                                        21.26C42.1947
-                                                                        21.4227
-                                                                        42.6054
-                                                                        21.8333
-                                                                        42.7681
-                                                                        22.3573L43.0441
-                                                                        23.2427C43.4224
-                                                                        24.4609
-                                                                        43.4607
-                                                                        25.7594
-                                                                        43.1547
-                                                                        26.9978C42.8488
-                                                                        28.2362
-                                                                        42.2102
-                                                                        29.3675
-                                                                        41.3081
-                                                                        30.2693L34.1147
-                                                                        37.464C34.0523
-                                                                        37.5263
-                                                                        33.9676
-                                                                        37.5613
-                                                                        33.8794
-                                                                        37.5613C33.7912
-                                                                        37.5613
-                                                                        33.7066
-                                                                        37.5263
-                                                                        33.6441
-                                                                        37.464L26.5681
-                                                                        30.3867C26.5058
-                                                                        30.3242
-                                                                        26.4708
-                                                                        30.2396
-                                                                        26.4708
-                                                                        30.1513C26.4708
-                                                                        30.0631
-                                                                        26.5058
-                                                                        29.9785
-                                                                        26.5681
-                                                                        29.916L33.7627
-                                                                        22.72C34.6646
-                                                                        21.8183
-                                                                        35.7957
-                                                                        21.1802
-                                                                        37.0339
-                                                                        20.8744C38.272
-                                                                        20.5687
-                                                                        39.5701
-                                                                        20.6071
-                                                                        40.7881
-                                                                        20.9853L41.6707
-                                                                        21.26Z"
-                  fill="#DB00FF"
-                />
-                <path
-                  d="M34.2117
-                                                                            25.5454C34.7743
-                                                                            24.9828
-                                                                            35.5374
-                                                                            24.6667
-                                                                            36.333
-                                                                            24.6667C37.1287
-                                                                            24.6667
-                                                                            37.8917
-                                                                            24.9828
-                                                                            38.4543
-                                                                            25.5454C39.0169
-                                                                            26.108
-                                                                            39.333
-                                                                            26.871
-                                                                            39.333
-                                                                            27.6667C39.333
-                                                                            28.4623
-                                                                            39.0169
-                                                                            29.2254
-                                                                            38.4543
-                                                                            29.788C37.8917
-                                                                            30.3506
-                                                                            37.1287
-                                                                            30.6667
-                                                                            36.333
-                                                                            30.6667C35.5374
-                                                                            30.6667
-                                                                            34.7743
-                                                                            30.3506
-                                                                            34.2117
-                                                                            29.788C33.6491
-                                                                            29.2254
-                                                                            33.333
-                                                                            28.4623
-                                                                            33.333
-                                                                            27.6667C33.333
-                                                                            26.871
-                                                                            33.6491
-                                                                            26.108
-                                                                            34.2117
-                                                                            25.5454ZM37.1813
-                                                                            26.8172C37.0698
-                                                                            26.7058
-                                                                            36.9375
-                                                                            26.6174
-                                                                            36.7919
-                                                                            26.5572C36.6462
-                                                                            26.4969
-                                                                            36.4902
-                                                                            26.4659
-                                                                            36.3326
-                                                                            26.466C36.175
-                                                                            26.4661
-                                                                            36.0189
-                                                                            26.4972
-                                                                            35.8734
-                                                                            26.5575C35.7278
-                                                                            26.6179
-                                                                            35.5955
-                                                                            26.7063
-                                                                            35.4841
-                                                                            26.8178C35.3727
-                                                                            26.9293
-                                                                            35.2844
-                                                                            27.0616
-                                                                            35.2241
-                                                                            27.2072C35.1639
-                                                                            27.3528
-                                                                            35.1329
-                                                                            27.5089
-                                                                            35.1329
-                                                                            27.6665C35.133
-                                                                            27.8241
-                                                                            35.1641
-                                                                            27.9802
-                                                                            35.2244
-                                                                            28.1257C35.2848
-                                                                            28.2713
-                                                                            35.3732
-                                                                            28.4036
-                                                                            35.4847
-                                                                            28.515C35.711
-                                                                            28.7335
-                                                                            36.0141
-                                                                            28.8545
-                                                                            36.3287
-                                                                            28.8517C36.6433
-                                                                            28.849
-                                                                            36.9442
-                                                                            28.7228
-                                                                            37.1667
-                                                                            28.5004C37.3891
-                                                                            28.2779
-                                                                            37.5153
-                                                                            27.977
-                                                                            37.5181
-                                                                            27.6624C37.5208
-                                                                            27.3478
-                                                                            37.3999
-                                                                            27.0447
-                                                                            37.1813
-                                                                            26.8184V26.8172Z"
-                  fill="#DADBF3"
-                />
-                <path
-                  d="M24.9199
-                                                                                40.5267C25.1021
-                                                                                40.3381
-                                                                                25.203
-                                                                                40.0856
-                                                                                25.2009
-                                                                                39.8234C25.1987
-                                                                                39.5612
-                                                                                25.0937
-                                                                                39.3103
-                                                                                24.9083
-                                                                                39.1248C24.723
-                                                                                38.9393
-                                                                                24.4723
-                                                                                38.834
-                                                                                24.2101
-                                                                                38.8316C23.9479
-                                                                                38.8292
-                                                                                23.6952
-                                                                                38.9299
-                                                                                23.5065
-                                                                                39.112L20.2052
-                                                                                42.412C20.0231
-                                                                                42.6007
-                                                                                19.9224
-                                                                                42.8533
-                                                                                19.9248
-                                                                                43.1155C19.9272
-                                                                                43.3777
-                                                                                20.0325
-                                                                                43.6285
-                                                                                20.218
-                                                                                43.8138C20.4035
-                                                                                43.9991
-                                                                                20.6544
-                                                                                44.1042
-                                                                                20.9166
-                                                                                44.1063C21.1788
-                                                                                44.1085
-                                                                                21.4313
-                                                                                44.0076
-                                                                                21.6199
-                                                                                43.8253L24.9199
-                                                                                40.5267Z"
-                  fill="#DB00FF"
-                />
-                <path
-                  d="M22.3266
-                                                                                    36.52C22.5139
-                                                                                    36.7075
-                                                                                    22.6191
-                                                                                    36.9617
-                                                                                    22.6191
-                                                                                    37.2267C22.6191
-                                                                                    37.4917
-                                                                                    22.5139
-                                                                                    37.7458
-                                                                                    22.3266
-                                                                                    37.9333L20.9133
-                                                                                    39.3466C20.8211
-                                                                                    39.4422
-                                                                                    20.7108
-                                                                                    39.5184
-                                                                                    20.5888
-                                                                                    39.5709C20.4668
-                                                                                    39.6234
-                                                                                    20.3356
-                                                                                    39.651
-                                                                                    20.2028
-                                                                                    39.6522C20.07
-                                                                                    39.6534
-                                                                                    19.9384
-                                                                                    39.6282
-                                                                                    19.8154
-                                                                                    39.578C19.6925
-                                                                                    39.5278
-                                                                                    19.5808
-                                                                                    39.4536
-                                                                                    19.4869
-                                                                                    39.3597C19.393
-                                                                                    39.2659
-                                                                                    19.3186
-                                                                                    39.1542
-                                                                                    19.2683
-                                                                                    39.0314C19.218
-                                                                                    38.9085
-                                                                                    19.1926
-                                                                                    38.7768
-                                                                                    19.1937
-                                                                                    38.6441C19.1948
-                                                                                    38.5113
-                                                                                    19.2223
-                                                                                    38.38
-                                                                                    19.2747
-                                                                                    38.258C19.327
-                                                                                    38.136
-                                                                                    19.4031
-                                                                                    38.0256
-                                                                                    19.4986
-                                                                                    37.9333L20.9119
-                                                                                    36.52C21.0048
-                                                                                    36.4271
-                                                                                    21.1151
-                                                                                    36.3533
-                                                                                    21.2364
-                                                                                    36.303C21.3578
-                                                                                    36.2528
-                                                                                    21.4879
-                                                                                    36.2269
-                                                                                    21.6193
-                                                                                    36.2269C21.7507
-                                                                                    36.2269
-                                                                                    21.8807
-                                                                                    36.2528
-                                                                                    22.0021
-                                                                                    36.303C22.1235
-                                                                                    36.3533
-                                                                                    22.2337
-                                                                                    36.4271
-                                                                                    22.3266
-                                                                                    36.52Z"
-                  fill="#DB00FF"
-                />
-                <path
-                  d="M27.5091
+      }
+
+      .leading-px40 {
+        line-height: 40px;
+      }
+
+      .leading-px36 {
+        line-height: 36px;
+      }
+
+      .z-min100 {
+        z-index: -100;
+      }
+
+      .z-min10 {
+        z-index: -10;
+      }
+
+      .max-w-screen {
+        max-width: 1440px;
+      }
+
+      .max-w-px400 {
+        max-width: 400px;
+      }
+
+      .w-px580 {
+        width: 580px;
+      }
+
+      .h-780 {
+        height: 780px;
+      }
+    </style>
+    <main class="px-4 pt-32 pb-0 mx-auto max-w-screen-2xl lg:px-24 how-can md:pb-24">
+      <h1 class="font-semibold leading-snug text-center text-white-2 md:leading-9 text-40">
+        How can we help your business
+      </h1>
+      <div class="relative z-10 grid grid-cols-1 card md:grid-cols-12 gap-11 mt-14">
+        <!-- CARD 1 -->
+        <div class="md:col-span-6 lg:col-span-4">
+          <div class="p-8 bg-dark rounded-3xl">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="32" fill="#1F1F33" />
+              <path d="M44.6787
+                21.764C44.5022 21.1961
+                44.1901 20.6796 43.7694
+                20.2592C43.3487 19.8387
+                42.8321 19.5269 42.2641
+                19.3507L41.3801
+                19.076C39.8143 18.5903
+                38.1455 18.5414 36.554
+                18.9348C34.9625 19.3281
+                33.5086 20.1487 32.3494
+                21.308L31.0214
+                22.6347C30.1232 21.9622
+                29.0126 21.6361 27.8934
+                21.7162C26.7742 21.7963
+                25.7214 22.2772 24.9281
+                23.0707L23.2734
+                24.728C23.0861 24.9155
+                22.981 25.1697 22.981
+                25.4347C22.981 25.6997
+                23.0861 25.9538 23.2734
+                26.1413L25.3947
+                28.2627L25.1547
+                28.5027C24.938 28.7193
+                24.7662 28.9766 24.6489
+                29.2597C24.5316 29.5428
+                24.4712 29.8462 24.4712
+                30.1527C24.4712 30.4591
+                24.5316 30.7625 24.6489
+                31.0456C24.7662 31.3288
+                24.938 31.586 25.1547
+                31.8027L25.8161
+                32.4627L23.9547
+                33.524C23.8211 33.6003
+                23.707 33.7064 23.6211
+                33.834C23.5352 33.9617
+                23.4799 34.1074 23.4595
+                34.2599C23.4391 34.4124
+                23.4542 34.5675 23.5035
+                34.7132C23.5529 34.8589
+                23.6352 34.9913 23.7441
+                35.1L28.9294
+                40.2867C29.0382 40.3952
+                29.1706 40.4772 29.3162
+                40.5263C29.4618 40.5754
+                29.6168 40.5903 29.7691
+                40.5698C29.9214 40.5493
+                30.067 40.494 30.1944
+                40.4081C30.3219 40.3222
+                30.4279 40.2081 30.5041
+                40.0747L31.5681
+                38.2147L32.2307
+                38.8773C32.4474 39.094
+                32.7047 39.2659 32.9878
+                39.3832C33.2709 39.5005
+                33.5743 39.5608 33.8807
+                39.5608C34.1872 39.5608
+                34.4906 39.5005 34.7737
+                39.3832C35.0568 39.2659
+                35.3141 39.094 35.5307
+                38.8773L35.7667
+                38.6427L37.8867
+                40.7627C38.0742 40.9499
+                38.3284 41.0551 38.5934
+                41.0551C38.8584 41.0551
+                39.1126 40.9499 39.3001
+                40.7627L40.9561
+                39.1053C41.7493 38.3125
+                42.2302 37.2602 42.3105
+                36.1416C42.3908 35.0229
+                42.0652 33.9127 41.3934
+                33.0147L42.7241
+                31.684C43.8838 30.5243
+                44.7046 29.0697 45.0977
+                27.4773C45.4909 25.885
+                45.4414 24.2156 44.9547
+                22.6493L44.6787
+                21.764ZM41.6707
+                21.26C42.1947 21.4227
+                42.6054 21.8333 42.7681
+                22.3573L43.0441
+                23.2427C43.4224 24.4609
+                43.4607 25.7594 43.1547
+                26.9978C42.8488 28.2362
+                42.2102 29.3675 41.3081
+                30.2693L34.1147
+                37.464C34.0523 37.5263
+                33.9676 37.5613 33.8794
+                37.5613C33.7912 37.5613
+                33.7066 37.5263 33.6441
+                37.464L26.5681
+                30.3867C26.5058 30.3242
+                26.4708 30.2396 26.4708
+                30.1513C26.4708 30.0631
+                26.5058 29.9785 26.5681
+                29.916L33.7627
+                22.72C34.6646 21.8183
+                35.7957 21.1802 37.0339
+                20.8744C38.272 20.5687
+                39.5701 20.6071 40.7881
+                20.9853L41.6707
+                21.26ZM39.9521
+                34.4547C40.5561 35.476
+                40.4187 36.8133 39.5414
+                37.6907L38.5921
+                38.64L37.1787
+                37.228L39.9521
+                34.4547ZM26.3441
+                24.4853C26.7618 24.0676
+                27.3065 23.8006 27.8925
+                23.7263C28.4785 23.652
+                29.0726 23.7745 29.5814
+                24.0747L26.8081
+                26.848L25.3947
+                25.4347L26.3441
+                24.4853ZM30.1014
+                36.7493L29.4161
+                37.9453L26.0827
+                34.612L27.2801
+                33.9293L30.1014
+                36.7493Z" fill="#DB00FF" />
+              <path d="M26.3441
+                24.4853C26.7618
+                24.0676 27.3065
+                23.8006 27.8925
+                23.7263C28.4785
+                23.652 29.0726
+                23.7745 29.5814
+                24.0747L26.8081
+                26.848L25.3947
+                25.4347L26.3441
+                24.4853Z" fill="#DB00FF" />
+              <path d="M30.1014
+                36.7493L29.4161
+                37.9453L26.0827
+                34.612L27.2801
+                33.9293L30.1014
+                36.7493Z" fill="#DB00FF" />
+              <path d="M39.9521
+                34.4547C40.5561
+                35.476
+                40.4187
+                36.8133
+                39.5414
+                37.6907L38.5921
+                38.64L37.1787
+                37.228L39.9521
+                34.4547Z" fill="#DB00FF" />
+              <path d="M41.6707
+                21.26C42.1947
+                21.4227
+                42.6054
+                21.8333
+                42.7681
+                22.3573L43.0441
+                23.2427C43.4224
+                24.4609
+                43.4607
+                25.7594
+                43.1547
+                26.9978C42.8488
+                28.2362
+                42.2102
+                29.3675
+                41.3081
+                30.2693L34.1147
+                37.464C34.0523
+                37.5263
+                33.9676
+                37.5613
+                33.8794
+                37.5613C33.7912
+                37.5613
+                33.7066
+                37.5263
+                33.6441
+                37.464L26.5681
+                30.3867C26.5058
+                30.3242
+                26.4708
+                30.2396
+                26.4708
+                30.1513C26.4708
+                30.0631
+                26.5058
+                29.9785
+                26.5681
+                29.916L33.7627
+                22.72C34.6646
+                21.8183
+                35.7957
+                21.1802
+                37.0339
+                20.8744C38.272
+                20.5687
+                39.5701
+                20.6071
+                40.7881
+                20.9853L41.6707
+                21.26Z" fill="#DB00FF" />
+              <path d="M34.2117
+                25.5454C34.7743
+                24.9828
+                35.5374
+                24.6667
+                36.333
+                24.6667C37.1287
+                24.6667
+                37.8917
+                24.9828
+                38.4543
+                25.5454C39.0169
+                26.108
+                39.333
+                26.871
+                39.333
+                27.6667C39.333
+                28.4623
+                39.0169
+                29.2254
+                38.4543
+                29.788C37.8917
+                30.3506
+                37.1287
+                30.6667
+                36.333
+                30.6667C35.5374
+                30.6667
+                34.7743
+                30.3506
+                34.2117
+                29.788C33.6491
+                29.2254
+                33.333
+                28.4623
+                33.333
+                27.6667C33.333
+                26.871
+                33.6491
+                26.108
+                34.2117
+                25.5454ZM37.1813
+                26.8172C37.0698
+                26.7058
+                36.9375
+                26.6174
+                36.7919
+                26.5572C36.6462
+                26.4969
+                36.4902
+                26.4659
+                36.3326
+                26.466C36.175
+                26.4661
+                36.0189
+                26.4972
+                35.8734
+                26.5575C35.7278
+                26.6179
+                35.5955
+                26.7063
+                35.4841
+                26.8178C35.3727
+                26.9293
+                35.2844
+                27.0616
+                35.2241
+                27.2072C35.1639
+                27.3528
+                35.1329
+                27.5089
+                35.1329
+                27.6665C35.133
+                27.8241
+                35.1641
+                27.9802
+                35.2244
+                28.1257C35.2848
+                28.2713
+                35.3732
+                28.4036
+                35.4847
+                28.515C35.711
+                28.7335
+                36.0141
+                28.8545
+                36.3287
+                28.8517C36.6433
+                28.849
+                36.9442
+                28.7228
+                37.1667
+                28.5004C37.3891
+                28.2779
+                37.5153
+                27.977
+                37.5181
+                27.6624C37.5208
+                27.3478
+                37.3999
+                27.0447
+                37.1813
+                26.8184V26.8172Z" fill="#DADBF3" />
+              <path d="M24.9199
+                40.5267C25.1021
+                40.3381
+                25.203
+                40.0856
+                25.2009
+                39.8234C25.1987
+                39.5612
+                25.0937
+                39.3103
+                24.9083
+                39.1248C24.723
+                38.9393
+                24.4723
+                38.834
+                24.2101
+                38.8316C23.9479
+                38.8292
+                23.6952
+                38.9299
+                23.5065
+                39.112L20.2052
+                42.412C20.0231
+                42.6007
+                19.9224
+                42.8533
+                19.9248
+                43.1155C19.9272
+                43.3777
+                20.0325
+                43.6285
+                20.218
+                43.8138C20.4035
+                43.9991
+                20.6544
+                44.1042
+                20.9166
+                44.1063C21.1788
+                44.1085
+                21.4313
+                44.0076
+                21.6199
+                43.8253L24.9199
+                40.5267Z" fill="#DB00FF" />
+              <path d="M22.3266
+                36.52C22.5139
+                36.7075
+                22.6191
+                36.9617
+                22.6191
+                37.2267C22.6191
+                37.4917
+                22.5139
+                37.7458
+                22.3266
+                37.9333L20.9133
+                39.3466C20.8211
+                39.4422
+                20.7108
+                39.5184
+                20.5888
+                39.5709C20.4668
+                39.6234
+                20.3356
+                39.651
+                20.2028
+                39.6522C20.07
+                39.6534
+                19.9384
+                39.6282
+                19.8154
+                39.578C19.6925
+                39.5278
+                19.5808
+                39.4536
+                19.4869
+                39.3597C19.393
+                39.2659
+                19.3186
+                39.1542
+                19.2683
+                39.0314C19.218
+                38.9085
+                19.1926
+                38.7768
+                19.1937
+                38.6441C19.1948
+                38.5113
+                19.2223
+                38.38
+                19.2747
+                38.258C19.327
+                38.136
+                19.4031
+                38.0256
+                19.4986
+                37.9333L20.9119
+                36.52C21.0048
+                36.4271
+                21.1151
+                36.3533
+                21.2364
+                36.303C21.3578
+                36.2528
+                21.4879
+                36.2269
+                21.6193
+                36.2269C21.7507
+                36.2269
+                21.8807
+                36.2528
+                22.0021
+                36.303C22.1235
+                36.3533
+                22.2337
+                36.4271
+                22.3266
+                36.52Z" fill="#DB00FF" />
+              <path d="M27.5091
                                                                                         43.1213C27.6074
                                                                                         43.0298
                                                                                         27.6862
@@ -1321,35 +1196,28 @@
                                                                                         26.0971
                                                                                         44.532L27.5105
                                                                                         43.1213H27.5091Z"
-                  fill="#DB00FF"
-                />
-              </svg>
-              <div class="mt-10 text-2xl font-bold card-title text-white-2">
-                Work fast, done fast
-              </div>
-              <p class="mt-4 text-base font-normal leading-6 text-grey-1">
-                Consectetur odio amet risus ut mattis sed tempor, sed luctus
-                consequat in pellentesque neque nec auctor eu mi mauris, sapien
-                aliquam duis eget id morbi auctor ac tellus ut
-              </p>
+                fill="#DB00FF" />
+            </svg>
+            <div class="mt-10 text-2xl font-bold card-title text-white-2">
+              Work fast, done fast
             </div>
+            <p class="mt-4 text-base font-normal leading-6 text-grey-1">
+              Consectetur odio amet risus ut mattis sed tempor, sed luctus
+              consequat in pellentesque neque nec auctor eu mi mauris, sapien
+              aliquam duis eget id morbi auctor ac tellus ut
+            </p>
           </div>
-          <!-- CARD 2 -->
-          <div class="md:col-span-6 lg:col-span-4">
-            <div class="p-8 bg-dark rounded-3xl">
-              <svg
-                width="64"
-                height="64"
-                viewBox="0
+        </div>
+        <!-- CARD 2 -->
+        <div class="md:col-span-6 lg:col-span-4">
+          <div class="p-8 bg-dark rounded-3xl">
+            <svg width="64" height="64" viewBox="0
                                                                                         0
                                                                                         64
-                                                                                        64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="64" height="64" rx="32" fill="#162523" />
-                <path
-                  d="M30.8571
+                                                                                        64" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="32" fill="#162523" />
+              <path d="M30.8571
                                                                                                 40C35.9066
                                                                                                 40
                                                                                                 40
@@ -1370,48 +1238,33 @@
                                                                                                 25.8076
                                                                                                 40
                                                                                                 30.8571
-                                                                                                40Z"
-                  stroke="#00FFE0"
-                  stroke-width="2.4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M43.4286
+                                                                                                40Z" stroke="#00FFE0"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M43.4286
                                                                                                     43.4286L37.7143
                                                                                                     37.7143"
-                  stroke="#00FFE0"
-                  stroke-width="2.4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <div class="mt-10 text-2xl font-bold card-title text-white-2">
-                Work out the details
-              </div>
-              <p class="mt-4 text-base font-normal leading-6 text-grey-1">
-                Consectetur odio amet risus ut mattis sed tempor, sed luctus
-                consequat in pellentesque neque nec auctor eu mi mauris, sapien
-                aliquam duis eget id morbi auctor ac tellus ut
-              </p>
+                stroke="#00FFE0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="mt-10 text-2xl font-bold card-title text-white-2">
+              Work out the details
             </div>
+            <p class="mt-4 text-base font-normal leading-6 text-grey-1">
+              Consectetur odio amet risus ut mattis sed tempor, sed luctus
+              consequat in pellentesque neque nec auctor eu mi mauris, sapien
+              aliquam duis eget id morbi auctor ac tellus ut
+            </p>
           </div>
-          <!-- CARD 3 -->
-          <div class="md:col-span-6 lg:col-span-4">
-            <div class="p-8 bg-dark rounded-3xl">
-              <svg
-                width="64"
-                height="64"
-                viewBox="0
+        </div>
+        <!-- CARD 3 -->
+        <div class="md:col-span-6 lg:col-span-4">
+          <div class="p-8 bg-dark rounded-3xl">
+            <svg width="64" height="64" viewBox="0
                                                                                                     0
                                                                                                     64
-                                                                                                    64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="64" height="64" rx="32" fill="#2E331F" />
-                <path
-                  d="M32.0138
+                                                                                                    64" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="32" fill="#2E331F" />
+              <path d="M32.0138
                                                                                                             19.0386C32.9749
                                                                                                             19.0493
                                                                                                             33.9321
@@ -1741,148 +1594,155 @@
                                                                                                             28.0121
                                                                                                             31.9981
                                                                                                             28.0121Z"
-                  fill="#FFC400"
-                />
-              </svg>
-              <div class="mt-10 text-2xl font-bold card-title text-white-2">
-                Customized to your needs
-              </div>
-              <p class="mt-4 text-base font-normal leading-6 text-grey-1">
-                Consectetur odio amet risus ut mattis sed tempor, sed luctus
-                consequat in pellentesque neque nec auctor eu mi mauris, sapien
-                aliquam duis eget id morbi auctor ac tellus ut
-              </p>
+                fill="#FFC400" />
+            </svg>
+            <div class="mt-10 text-2xl font-bold card-title text-white-2">
+              Customized to your needs
             </div>
+            <p class="mt-4 text-base font-normal leading-6 text-grey-1">
+              Consectetur odio amet risus ut mattis sed tempor, sed luctus
+              consequat in pellentesque neque nec auctor eu mi mauris, sapien
+              aliquam duis eget id morbi auctor ac tellus ut
+            </p>
           </div>
         </div>
-      </main>
-    </section>
-    <section class="subscribe">
-      <style scoped>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-        body {
-          font-family: "Poppins", sans-serif;
-        }
-        :root {
-          --white-1: #ffffff;
-          --white-2: #eeeeee;
-          --white-3: #ecf1f4;
-          --black: #000909;
-          --dark: #0a0f16;
-          --subtleGreen: #90bcb7;
-          --darkGreen: #082d28;
-          --darkTosca: #569b9b;
-          --tosca-1: #00ffd1;
-          --tosca-2: #27d7d7;
-          --tosca-3: #3fe8ff;
-          --deepTosca-1: #016a6a;
-          --deepTosca-2: #02a6a6;
-          --grey-1: #888888;
-          --grey-2: #666666;
-        }
-        .text-28 {
-          font-size: 28px;
-        }
-        .text-24 {
-          font-size: 24px;
-        }
-        .text-20 {
-          font-size: 20px;
-        }
-        .text-white-1 {
-          color: var(--white-1);
-        }
-        .text-white-2 {
-          color: var(--white-2);
-        }
-        .text-black-1 {
-          color: var(--black);
-        }
-        .text-grey-1 {
-          color: var(--grey-1);
-        }
-        .text-grey-2 {
-          color: var(--grey-2);
-        }
-        .text-darkGreen {
-          color: var(--darkGreen);
-        }
-        .text-darkTosca {
-          color: var(--darkTosca);
-        }
-        .text-subtleGreen {
-          color: var(--subtleGreen);
-        }
-        .bg-white-2 {
-          background-color: var(--white-2);
-        }
-        .leading-px40 {
-          line-height: 40px;
-        }
-        .leading-px36 {
-          line-height: 36px;
-        }
-        .max-w-screen {
-          max-width: 1440px;
-        }
-        .bg-gradient {
-          background: linear-gradient(
-            94.41deg,
+      </div>
+    </main>
+  </section>
+  <section class="subscribe">
+    <style scoped>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --white-1: #ffffff;
+        --white-2: #eeeeee;
+        --white-3: #ecf1f4;
+        --black: #000909;
+        --dark: #0a0f16;
+        --subtleGreen: #90bcb7;
+        --darkGreen: #082d28;
+        --darkTosca: #569b9b;
+        --tosca-1: #00ffd1;
+        --tosca-2: #27d7d7;
+        --tosca-3: #3fe8ff;
+        --deepTosca-1: #016a6a;
+        --deepTosca-2: #02a6a6;
+        --grey-1: #888888;
+        --grey-2: #666666;
+      }
+
+      .text-28 {
+        font-size: 28px;
+      }
+
+      .text-24 {
+        font-size: 24px;
+      }
+
+      .text-20 {
+        font-size: 20px;
+      }
+
+      .text-white-1 {
+        color: var(--white-1);
+      }
+
+      .text-white-2 {
+        color: var(--white-2);
+      }
+
+      .text-black-1 {
+        color: var(--black);
+      }
+
+      .text-grey-1 {
+        color: var(--grey-1);
+      }
+
+      .text-grey-2 {
+        color: var(--grey-2);
+      }
+
+      .text-darkGreen {
+        color: var(--darkGreen);
+      }
+
+      .text-darkTosca {
+        color: var(--darkTosca);
+      }
+
+      .text-subtleGreen {
+        color: var(--subtleGreen);
+      }
+
+      .bg-white-2 {
+        background-color: var(--white-2);
+      }
+
+      .leading-px40 {
+        line-height: 40px;
+      }
+
+      .leading-px36 {
+        line-height: 36px;
+      }
+
+      .max-w-screen {
+        max-width: 1440px;
+      }
+
+      .bg-gradient {
+        background: linear-gradient(94.41deg,
             #00ffd1 0%,
             #27d7d7 52.17%,
-            #3fe8ff 100%
-          );
+            #3fe8ff 100%);
+      }
+
+      .gradient-button {
+        background: linear-gradient(276.78deg, #016a6a 0%, #02a6a6 100%);
+      }
+
+      .py-px72 {
+        padding: 72px 0;
+      }
+
+      .text-subscribe {
+        font-size: 24px;
+      }
+
+      @media (min-width: 768px) {
+        .w-px442 {
+          width: 442px;
         }
-        .gradient-button {
-          background: linear-gradient(276.78deg, #016a6a 0%, #02a6a6 100%);
-        }
-        .py-px72 {
-          padding: 72px 0;
-        }
+
         .text-subscribe {
-          font-size: 24px;
+          font-size: 40px;
         }
-        @media (min-width: 768px) {
-          .w-px442 {
-            width: 442px;
-          }
-          .text-subscribe {
-            font-size: 40px;
-          }
-        }
-      </style>
-      <main class="subscribe bg-gradient">
-        <div class="px-4 mx-auto max-w-screen-2xl lg:px-24 py-px72">
-          <h1
-            class="font-semibold leading-snug text-center text-black-1 md:leading-9 text-subscribe"
-          >
-            Subscribe to our newsletter
-          </h1>
-          <p
-            class="mt-2 mb-16 text-sm font-normal text-center text-black-1 md:mt-5 md:text-xl"
-          >
-            Get notification about tips, new feature and exclusive promo just
-            for you.
-          </p>
-          <form action="#" class="mx-auto w-px442">
-            <label
-              for="email"
-              class="grid grid-cols-12 gap-1 p-3 bg-white rounded-xl"
-            >
-              <div class="flex col-span-8 py-2">
-                <!-- mail icon -->
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0
+      }
+    </style>
+    <main class="subscribe bg-gradient">
+      <div class="px-4 mx-auto max-w-screen-2xl lg:px-24 py-px72">
+        <h1 class="font-semibold leading-snug text-center text-black-1 md:leading-9 text-subscribe">
+          Subscribe to our newsletter
+        </h1>
+        <p class="mt-2 mb-16 text-sm font-normal text-center text-black-1 md:mt-5 md:text-xl">
+          Get notification about tips, new feature and exclusive promo just
+          for you.
+        </p>
+        <form action="#" class="mx-auto w-px442">
+          <label for="email" class="grid grid-cols-12 gap-1 p-3 bg-white rounded-xl">
+            <div class="flex col-span-8 py-2">
+              <!-- mail icon -->
+              <svg width="24" height="24" viewBox="0
                                                                                                                 0
                                                                                                                 24
                                                                                                                 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4
                                                                                                                     4H20C21.1
                                                                                                                     4
                                                                                                                     22
@@ -1904,137 +1764,126 @@
                                                                                                                     4
                                                                                                                     4
                                                                                                                     4Z"
-                    stroke="#569B9B"
-                    stroke-width="1.4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M22
+                  stroke="#569B9B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M22
                                                                                                                         6L12
                                                                                                                         13L2
                                                                                                                         6"
-                    stroke="#569B9B"
-                    stroke-width="1.4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter
+                  stroke="#569B9B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <input type="email" name="email"
+                placeholder="Enter
                                                                                                                         your
                                                                                                                         email
                                                                                                                         address"
-                  class="w-full ml-2 text-sm font-semibold placeholder-green-700 focus:outline-none md:text-base text-darkTosca"
-                />
-              </div>
-              <div class="col-span-4 text-right">
-                <button
-                  type="submit"
-                  class="px-2 py-2 text-base font-semibold text-center rounded-lg text-white-2 gradient-button md:px-4"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </label>
-          </form>
-        </div>
-      </main>
-    </section>
-    <section class="footer">
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-        body {
-          font-family: "Poppins", sans-serif;
-        }
-        :root {
-          --white-1: #ffffff;
-          --white-2: #eeeeee;
-          --white-3: #ecf1f4;
-          --black: #000909;
-          --dark: #0a0f16;
-          --subtleGreen: #90bcb7;
-          --darkGreen: #082d28;
-          --darkTosca: #569b9b;
-          --tosca-1: #00ffd1;
-          --tosca-2: #27d7d7;
-          --tosca-3: #3fe8ff;
-          --deepTosca-1: #016a6a;
-          --deepTosca-2: #02a6a6;
-          --grey-1: #888888;
-          --grey-2: #666666;
-        }
-        .text-28 {
-          font-size: 28px;
-        }
-        .text-24 {
-          font-size: 24px;
-        }
-        .text-20 {
-          font-size: 20px;
-        }
-        .text-white-1 {
-          color: var(--white-1);
-        }
-        .text-white-2 {
-          color: var(--white-2);
-        }
-        .text-white-3 {
-          color: var(--white-3);
-        }
-        .text-grey-1 {
-          color: var(--grey-1);
-        }
-        .text-grey-2 {
-          color: var(--grey-2);
-        }
-        .bg-gradient-footer {
-          background: linear-gradient(
-            293.57deg,
+                class="w-full ml-2 text-sm font-semibold placeholder-green-700 focus:outline-none md:text-base text-darkTosca" />
+            </div>
+            <div class="col-span-4 text-right">
+              <button type="submit"
+                class="px-2 py-2 text-base font-semibold text-center rounded-lg text-white-2 gradient-button md:px-4">
+                Subscribe
+              </button>
+            </div>
+          </label>
+        </form>
+      </div>
+    </main>
+  </section>
+  <section class="footer">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --white-1: #ffffff;
+        --white-2: #eeeeee;
+        --white-3: #ecf1f4;
+        --black: #000909;
+        --dark: #0a0f16;
+        --subtleGreen: #90bcb7;
+        --darkGreen: #082d28;
+        --darkTosca: #569b9b;
+        --tosca-1: #00ffd1;
+        --tosca-2: #27d7d7;
+        --tosca-3: #3fe8ff;
+        --deepTosca-1: #016a6a;
+        --deepTosca-2: #02a6a6;
+        --grey-1: #888888;
+        --grey-2: #666666;
+      }
+
+      .text-28 {
+        font-size: 28px;
+      }
+
+      .text-24 {
+        font-size: 24px;
+      }
+
+      .text-20 {
+        font-size: 20px;
+      }
+
+      .text-white-1 {
+        color: var(--white-1);
+      }
+
+      .text-white-2 {
+        color: var(--white-2);
+      }
+
+      .text-white-3 {
+        color: var(--white-3);
+      }
+
+      .text-grey-1 {
+        color: var(--grey-1);
+      }
+
+      .text-grey-2 {
+        color: var(--grey-2);
+      }
+
+      .bg-gradient-footer {
+        background: linear-gradient(293.57deg,
             #114e4e 0%,
             #052d2d 23.8%,
             #041111 42.57%,
             #000909 63.76%,
-            #000909 69.62%
-          );
-        }
-      </style>
-      <main class="bg-gradient-footer footer md:divide-y-2">
-        <footer class="px-4 pt-20 mx-auto max-w-screen-2xl lg:px-24">
-          <div class="grid gap-16 lg:grid-cols-12">
-            <div class="md:col-span-12 lg:col-span-6">
-              <!-- WorkLy Logo -->
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/Logo.svg"
-                alt="workly"
-              />
-              <div class="mt-3 mb-2 text-base font-semibold text-white-3">
-                <a href="https://dwp.my.id/">DWP Page</a>
-              </div>
-              <p class="text-base font-normal text-white-3">
-                Waru, Sidoarjo
-                <br />
-                Jawa Timur, Indonesia
-              </p>
-              <!-- social media icons SVG -->
-              <div class="flex flex-row items-center mt-9">
-                <!-- linkedin -->
-                <a href="https://linkedin.com/">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0
+            #000909 69.62%);
+      }
+    </style>
+    <main class="bg-gradient-footer footer md:divide-y-2">
+      <footer class="px-4 pt-20 mx-auto max-w-screen-2xl lg:px-24">
+        <div class="grid gap-16 lg:grid-cols-12">
+          <div class="md:col-span-12 lg:col-span-6">
+            <!-- WorkLy Logo -->
+            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/Logo.svg"
+              alt="workly" />
+            <div class="mt-3 mb-2 text-base font-semibold text-white-3">
+              <a href="https://dwp.my.id/">DWP Page</a>
+            </div>
+            <p class="text-base font-normal text-white-3">
+              Waru, Sidoarjo
+              <br />
+              Jawa Timur, Indonesia
+            </p>
+            <!-- social media icons SVG -->
+            <div class="flex flex-row items-center mt-9">
+              <!-- linkedin -->
+              <a href="https://linkedin.com/">
+                <svg width="24" height="24"
+                  viewBox="0
                                                                                                                             0
                                                                                                                             24
-                                                                                                                            24"
-                    fill="none"
-                    class="mr-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0
+                                                                                                                            24" fill="none"
+                  class="mr-6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0
                                                                                                                                 1.719C0
                                                                                                                                 0.7695
                                                                                                                                 0.789
@@ -2114,40 +1963,28 @@
                                                                                                                                 20.091
                                                                                                                                 9.3765
                                                                                                                                 20.091H12.9765Z"
-                      fill="url(#paint0_linear_154:234)"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_154:234"
-                        x1="0"
-                        y1="0"
-                        x2="24"
-                        y2="24"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#46F0C7" />
-                        <stop offset="1" stop-color="#46F0F0" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </a>
+                    fill="url(#paint0_linear_154:234)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_154:234" x1="0" y1="0" x2="24" y2="24"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#46F0C7" />
+                      <stop offset="1" stop-color="#46F0F0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
 
-                <!-- // facebook  -->
-                <a href="https://facebook.com/">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0
+              <!-- // facebook  -->
+              <a href="https://facebook.com/">
+                <svg width="24" height="24"
+                  viewBox="0
                                                                                                                                         0
                                                                                                                                         24
                                                                                                                                         24"
-                    fill="none"
-                    class="mr-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_154:237)">
-                      <path
-                        d="M23.9995
+                  fill="none" class="mr-6" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_154:237)">
+                    <path
+                      d="M23.9995
                                                                                                                                                 12.0733C23.9995
                                                                                                                                                 5.40429
                                                                                                                                                 18.6265
@@ -2185,43 +2022,31 @@
                                                                                                                                                 18.0988
                                                                                                                                                 23.9995
                                                                                                                                                 12.0733Z"
-                        fill="url(#paint0_linear_154:237)"
-                      />
-                    </g>
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_154:237"
-                        x1="-0.003479"
-                        y1="-0.00170898"
-                        x2="23.9995"
-                        y2="24.0013"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#46F0C7" />
-                        <stop offset="1" stop-color="#46F0F0" />
-                      </linearGradient>
-                      <clipPath id="clip0_154:237">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
+                      fill="url(#paint0_linear_154:237)" />
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_154:237" x1="-0.003479" y1="-0.00170898" x2="23.9995" y2="24.0013"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#46F0C7" />
+                      <stop offset="1" stop-color="#46F0F0" />
+                    </linearGradient>
+                    <clipPath id="clip0_154:237">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
 
-                <!-- // twitter -->
-                <a href="https://twitter.com/">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0
+              <!-- // twitter -->
+              <a href="https://twitter.com/">
+                <svg width="24" height="24"
+                  viewBox="0
                                                                                                                                                         0
                                                                                                                                                         24
                                                                                                                                                         24"
-                    fill="none"
-                    class="mr-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.539
+                  fill="none" class="mr-6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.539
                                                                                                                                                             22.5001C16.596
                                                                                                                                                             22.5001
                                                                                                                                                             21.5505
@@ -2343,39 +2168,27 @@
                                                                                                                                                             22.5009
                                                                                                                                                             7.539
                                                                                                                                                             22.5001Z"
-                      fill="url(#paint0_linear_154:240)"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_154:240"
-                        x1="0"
-                        y1="2.99902"
-                        x2="19.0883"
-                        y2="26.491"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#46F0C7" />
-                        <stop offset="1" stop-color="#46F0F0" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </a>
+                    fill="url(#paint0_linear_154:240)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_154:240" x1="0" y1="2.99902" x2="19.0883" y2="26.491"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#46F0C7" />
+                      <stop offset="1" stop-color="#46F0F0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
 
-                <!-- twitch -->
-                <a href="https://www.twitch.tv/">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0
+              <!-- twitch -->
+              <a href="https://www.twitch.tv/">
+                <svg width="24" height="24"
+                  viewBox="0
                                                                                                                                                                     0
                                                                                                                                                                     24
                                                                                                                                                                     24"
-                    fill="none"
-                    class="mr-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.7855
+                  fill="none" class="mr-6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.7855
                                                                                                                                                                         0L1.5
                                                                                                                                                                         4.2855V19.7145H6.6435V24L10.929
                                                                                                                                                                         19.7145H14.355L22.071
@@ -2383,104 +2196,91 @@
                                                                                                                                                                         11.1435L16.929
                                                                                                                                                                         14.571H13.5L10.5
                                                                                                                                                                         17.571V14.571H6.6435V1.7145H20.3565V11.1435Z"
-                      fill="url(#paint0_linear_154:243)"
-                    />
-                    <path
-                      d="M17.7855
+                    fill="url(#paint0_linear_154:243)" />
+                  <path
+                    d="M17.7855
                                                                                                                                                                             4.7146H16.071V9.8551H17.7855V4.7146ZM13.071
                                                                                                                                                                             4.7146H11.3565V9.8551H13.071V4.7146Z"
-                      fill="url(#paint1_linear_154:243)"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_154:243"
-                        x1="1.5"
-                        y1="0"
-                        x2="25.2176"
-                        y2="20.3289"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#46F0C7" />
-                        <stop offset="1" stop-color="#46F0F0" />
-                      </linearGradient>
-                      <linearGradient
-                        id="paint1_linear_154:243"
-                        x1="11.3565"
-                        y1="4.7146"
-                        x2="16.3711"
-                        y2="10.9861"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#46F0C7" />
-                        <stop offset="1" stop-color="#46F0F0" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="md:col-span-4 lg:col-span-2">
-              <div class="mb-5 text-base font-bold text-white-3">
-                Our Features
-              </div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  Adaptive
-                </a>
-              </div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  Faster
-                </a>
-              </div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  Integrated
-                </a>
-              </div>
-            </div>
-            <div class="md:col-span-4 lg:col-span-2">
-              <div class="mb-5 text-base font-bold text-white-3">Company</div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  About Us
-                </a>
-              </div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3"> Blog </a>
-              </div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  Join Us
-                </a>
-              </div>
-            </div>
-            <div class="md:col-span-4 lg:col-span-2">
-              <div class="mb-5 text-base font-bold text-white-3">Help</div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  API Documentation
-                </a>
-              </div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  System Status
-                </a>
-              </div>
-              <div class="mb-3">
-                <a href="" class="text-base font-normal text-white-3">
-                  Talk to Support
-                </a>
-              </div>
+                    fill="url(#paint1_linear_154:243)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_154:243" x1="1.5" y1="0" x2="25.2176" y2="20.3289"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#46F0C7" />
+                      <stop offset="1" stop-color="#46F0F0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_154:243" x1="11.3565" y1="4.7146" x2="16.3711" y2="10.9861"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#46F0C7" />
+                      <stop offset="1" stop-color="#46F0F0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
             </div>
           </div>
-        </footer>
-        <div class="mx-auto mt-16 max-w-screen-2xl py-9">
-          <p class="text-base font-normal text-center text-white-3">
-            <a href="https://dwp.my.id/">DWP</a> @ 2023  | Created with <i style="font-size:20px" class="fa">&#xf004;<i>
-          </p>
+          <div class="md:col-span-4 lg:col-span-2">
+            <div class="mb-5 text-base font-bold text-white-3">
+              Our Features
+            </div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                Adaptive
+              </a>
+            </div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                Faster
+              </a>
+            </div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                Integrated
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-4 lg:col-span-2">
+            <div class="mb-5 text-base font-bold text-white-3">Company</div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                About Us
+              </a>
+            </div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3"> Blog </a>
+            </div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                Join Us
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-4 lg:col-span-2">
+            <div class="mb-5 text-base font-bold text-white-3">Help</div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                API Documentation
+              </a>
+            </div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                System Status
+              </a>
+            </div>
+            <div class="mb-3">
+              <a href="" class="text-base font-normal text-white-3">
+                Talk to Support
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-    </section>
-  </body>
+      </footer>
+      <div class="mx-auto mt-16 max-w-screen-2xl py-9">
+        <p class="text-base font-normal text-center text-white-3">
+          <a href="https://dwp.my.id/">DWP</a> @ 2023 | Created with <i style="font-size:20px" class="fa">&#xf004;<i>
+        </p>
+      </div>
+    </main>
+  </section>
+</body>
+
 </html>
