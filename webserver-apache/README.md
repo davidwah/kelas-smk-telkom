@@ -87,4 +87,10 @@ sudo systemctl restart apache2
 # Coba akses pada browser
 ---
 
+# Setting Hosts di Windows
+File hosts ini digunakan untuk konfigurasi penamaan DNS pada VM yang kita punya. Nantinya kita bisa mengakses VM tanpa harus ketik IP Address dari VM, cukup panggil nama Domain saja.  
+File config hosts berada di 
+```
+C:\Windows\System32\drivers\etc
+```
 
